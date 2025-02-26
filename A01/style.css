@@ -1,0 +1,78 @@
+*{
+   font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: crimson; 
+ }
+ 
+ 
+ 
+ .small-heading{
+     text-transform: uppercase;
+ }
+ 
+ #quote-by-author{
+     background: lightgray;
+     padding: 10px;
+     line-height: 1.75;   
+ }
+ 
+ .list > li {
+    color:crimson;
+ }
+ 
+ .list > li ul {
+     color: initial;
+ }
+
+ article:has(p) {
+    color:black;
+ }
+
+ article time {
+    color:green;
+ }
+ 
+ header + p {
+    font-size: 1.25rem;
+    font-weight: bold;
+ }
+
+ header ~ img {
+    border: 4px solid crimson;
+ }
+
+ a:link {
+    color: #1d70b8;
+ }
+
+ a:visited {
+    color: #4c2c92;
+ }
+
+ a:hover {
+    color: #003078;
+ }
+
+ a:active {
+    color:greenyellow;
+ }
+
+ a:focus{
+    outline: solid 1px crimson;
+ }
+
+ header + p::first-letter {
+   color: crimson;
+   font-style: italic;
+ }
+
+[lang="it"]::before {
+   color: "\01F1EE \01F1F9";
+ }
+
+a[target="_blank"] {
+   color: green;
+}
+
