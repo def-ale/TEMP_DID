@@ -1,0 +1,43 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+body{
+    --primary: #de3c4b;
+    --primary-contrast: #ffffff;
+    --seconday: #717777;
+    --font: Helvetica, Arial, sans-serif;
+    --text-color: #2d3142;
+    --card-background: #ffffff;
+    --tecnologies-background: #ffdadd;
+    --page-background: linear-gradient(#4F5075, #2D3142);
+    --imageSize: 200px;
+
+    background: var(--page-background);
+    font-family: var(--font);
+    color: var(--text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--card-background);
+    box-shadow: 0 0 55px rgba(38, 40, 45, .75);
+    width: 75vw;
+    max-width: 500px;
+    border-radius: 4px;
+    text-align: center;
+    margin:calc(var(--imageSize)/3 + 24px) 24px;
+}
+
+img.portrait{
+    width: var(--imageSize);
+    height: var(--imageSize);
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: calc(-1 * var(--imageSize) / 3);
+}
