@@ -103,3 +103,79 @@ ul {
 .side-menu  {
     display: none;
 }
+
+.side-menu:checked ~ nav {
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background-color: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.subnav-content {
+    background-color: var(--white);
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
+    display: none;
+}
+
+.subnav-content a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.subnavbtn {
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .menu li {
+        float: left;
+    }
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--gray);
+    }
+
+    .hamb {
+        display: none;
+    }
+
+    .subnav-content {
+        padding: 20px 0;
+        display: none;
+        background-color: var(--black);
+    }
+
+    .subnav-content a {
+        color: var(--white);
+    }
+}

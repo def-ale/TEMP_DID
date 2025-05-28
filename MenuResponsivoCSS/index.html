@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,8 +17,16 @@
         <nav class="nav">
             <ul class="menu">
                 <li><a href="#">Galeria</a></li>
-                <li><a href="#" lang="en"></a>Blog</li>
-                <li><a href="#"></a>Sobre</li>
+                <li><a href="#" lang="en">Blog</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li class="subnav">
+                    <p class="subnavbtn">Contato <i class="fa fa-caret-down"></i></p>
+                    <div class="subnav-content">
+                        <a href="#" lang="en">Email</a>
+                        <a href="#" lang="en">Twitter</a>
+                        <a href="#">Telefone</a>
+                    </div>
+                </li>
             </ul>   
         </nav>  
     </header>
